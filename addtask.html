@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task | Taskboss</title>
+    <link rel="stylesheet" href="taskoss.css">
+</head>
+<body>
+    <div class="logo-heading">
+        <div class="logo-box">
+            <img src="https://img.icons8.com/ios-filled/100/ffffff/notepad.png" alt="Taskboss logo">
+        </div>
+        <div class="site-title">Taskboss</div>
+    </div>
+
+    <main class="form-card">
+        <h1 class="page-heading">Add a Task</h1>
+        <form id="task-form" class="task-form">
+            <label>
+                What task is it?
+                <input id="task-title" name="title" type="text" placeholder="Task name" required>
+            </label>
+            <label>
+                When was it given?
+                <input id="task-given" name="given" type="date" required>
+            </label>
+            <label>
+                When is it due?
+                <input id="task-due" name="due" type="date" required>
+            </label>
+            <label>
+                Urgency
+                <select id="task-urgency" name="urgency">
+                    <option value="Low">Low</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="High">High</option>
+                </select>
+            </label>
+            <label>
+                Extra notes
+                <textarea id="task-notes" name="notes" placeholder="Additional details..."></textarea>
+            </label>
+            <div class="form-actions">
+                <a class="secondary-button" href="taskboss.html">Back</a>
+                <button class="primary-button" type="submit">Save task</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="taskboss.js"></script>
+</body>
+</html>
